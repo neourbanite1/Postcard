@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TaM-Op-kfP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Postcard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="3P2-3v-xCl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="82" width="275" height="49"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w6k-UZ-Aec">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="220" y="139" width="80" height="80"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZD1-jg-AmL">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="242" width="275" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J21-6B-yYN">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="289" width="275" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAV-Jk-KLv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.60000002379999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send Mail">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="189" width="178" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KcM-TM-xVK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3P2-3v-xCl"/>
+                                <exclude reference="w6k-UZ-Aec"/>
+                                <exclude reference="ZD1-jg-AmL"/>
+                                <exclude reference="J21-6B-yYN"/>
+                                <exclude reference="GAV-Jk-KLv"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3P2-3v-xCl"/>
+                                <include reference="w6k-UZ-Aec"/>
+                                <include reference="ZD1-jg-AmL"/>
+                                <include reference="J21-6B-yYN"/>
+                                <include reference="GAV-Jk-KLv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="enterMessageTextField" destination="J21-6B-yYN" id="LJo-9j-RC3"/>
+                        <outlet property="enterNameTextField" destination="ZD1-jg-AmL" id="VBI-uw-GFh"/>
+                        <outlet property="mailButton" destination="GAV-Jk-KLv" id="19L-gv-Vcf"/>
+                        <outlet property="messageLabel" destination="3P2-3v-xCl" id="iU9-my-Qak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462.5" y="360"/>
+        </scene>
+        <!--View Controller - Barcelona-->
+        <scene sceneID="1kc-0Z-2YP">
+            <objects>
+                <viewController id="MmV-n3-vZe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I6W-M2-oLp"/>
+                        <viewControllerLayoutGuide type="bottom" id="JW0-7N-9Ud"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IZ7-i1-yd4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="0yi-l7-6RW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0yi-l7-6RW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0yi-l7-6RW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Barcelona" id="mDW-Tn-zGb">
+                        <barButtonItem key="rightBarButtonItem" title="Message" id="y2L-sa-KYE">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="show" id="rcG-5X-bK6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gfy-xs-mO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="360"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nO7-RQ-E4K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TaM-Op-kfP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kaA-7e-wo9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MmV-n3-vZe" kind="relationship" relationship="rootViewController" id="mLd-GK-VN7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ky-E2-Gze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlbertEinsteinStamp.jpg" width="1917" height="1344"/>
+        <image name="SagradaFamilia.jpeg" width="205" height="245"/>
+    </resources>
+</document>
