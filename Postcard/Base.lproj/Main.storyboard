@@ -25,6 +25,15 @@
                                     <rect key="frame" x="25" y="82" width="275" height="49"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11l-Wp-P4Y">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="25" y="144" width="187" height="37"/>
+                                </variation>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w6k-UZ-Aec">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -66,6 +75,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3P2-3v-xCl"/>
+                                <exclude reference="11l-Wp-P4Y"/>
                                 <exclude reference="w6k-UZ-Aec"/>
                                 <exclude reference="ZD1-jg-AmL"/>
                                 <exclude reference="J21-6B-yYN"/>
@@ -75,6 +85,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3P2-3v-xCl"/>
+                                <include reference="11l-Wp-P4Y"/>
                                 <include reference="w6k-UZ-Aec"/>
                                 <include reference="ZD1-jg-AmL"/>
                                 <include reference="J21-6B-yYN"/>
@@ -89,6 +100,7 @@
                         <outlet property="enterNameTextField" destination="ZD1-jg-AmL" id="VBI-uw-GFh"/>
                         <outlet property="mailButton" destination="GAV-Jk-KLv" id="19L-gv-Vcf"/>
                         <outlet property="messageLabel" destination="3P2-3v-xCl" id="iU9-my-Qak"/>
+                        <outlet property="nameLabel" destination="11l-Wp-P4Y" id="Ycz-f8-Ha9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
